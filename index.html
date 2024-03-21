@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+
 </head>
 <body>
     <header>
         <div class="nav-bar">
             <a href="" class="logo">Alexandera</a>
 
-        <ul class="nav__link">
-            <li class="nav-link">
-                <a href="#home" class="link active">Home</a>
-            </li>
-            <li class="nav-link">
-                <a href="#about" class="link">About</a>
-            </li>
-            <li class="nav-link">
-                <a href="#experience" class="link">Experience</a>
-            </li>
-            <li class="nav-link">
-                <a href="#services" class="link">Services</a>
-            </li>
-            <li class="nav-link">
-                <a href="#portfolio" class="link">Portfolio</a>
-            </li>
-            <li class="nav-link">
-                <a href="#contact" class="link">Contact</a>
-            </li>
-        </ul>
+            <ul class="nav__link">
+                <li class="nav-link">
+                    <a href="#home" class="link active">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#about" class="link">About</a>
+                </li>
+                <!-- <li class="nav-link">
+                    <a href="#experience" class="link">Experience</a>
+                </li> -->
+                <li class="nav-link">
+                    <a href="#services" class="link">Services</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#portfolio" class="link">Portfolio</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#contact" class="link">Contact</a>
+                </li>
+            </ul>
+            <div class="mobile-nav">
+                <button id="hamburger" class="nav-toogle">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -45,13 +56,13 @@
     
                 <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quisquam deserunt soluta autem, magnam mollitia totam animi nihil explicabo aut harum cupiditate hic pariatur, doloremque ad repudiandae non. Nihil enim consequatur consectetur, quibusdam unde explicabo. Reiciendis ipsam eaque excepturi temporibus, id ipsa exercitationem alias accusantium quia blanditiis ad natus ea?</p>
                 <div class="buttons">
-                    <button class="buttonA" id="btnA">Hire Me</button>
-                    <button class="buttonA" id="btnB">Portfolio</button>
+                    <button class="buttonA animate__animated animate__bounce animate__slow " id="btnA">Hire Me</button>
+                    <button class="buttonA animate__animated animate__bounce animate__slow " id="btnB">Portfolio</button>
                 </div>
             </div>
             <div class="about-right">
-                <div class="about-right-img">
-                    <img src="./asset/images/Rectangle 35.png" alt="">
+                <div class="about-right-img animate__animated animate__fadeInRight  animate__slow">
+                    <img src="./asset/images/profile.png" alt="">
                 </div>
             </div>
         </div>
@@ -60,39 +71,418 @@
     <section class="more-about">
         <div class="more-about-section">
             <div class="more-about-sub1">
-                <div class="mas-img">
-                    <img src="./asset/images/Rectangle 35.png" alt="">
+                <div class="mas-img animate__animated animate__fadeInLeft animate__slow"  >
+                    <img src="./asset/images/about.png" alt="">
                 </div>
             </div>
             <div class="more-about-sub2">
                 <h6>WHO AM I?</h6>
                 <h2>I'm Alexander Smith, a visual UI/UX Designer and Web Developer</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos praesentium, quasi, magni incidunt, optio maiores eaque explicabo distinctio eligendi placeat iusto ex dicta vitae laborum veritatis. Natus ad esse assumenda harum magnam. Quia corporis velit cumque! Et veritatis asperiores voluptas veniam quos provident alias praesentium, soluta ipsam itaque numquam suscipit.</p>
-                <hr>
+                <hr style="margin: 20px 0;">
                 <div class="some-detail">
-                    <div class="ma-bio">
-                        <p><span><h5>Name:</h5></span> Alender Smith</p>
-                        <p><span><h5>From:</h5></span> London, UK</p>
+                    <div class="my-bio">
+                        <p><span><strong>Name:</strong></span> Alender Smith</p>
+                        <p><span><strong>From:</strong></span> London, UK</p>
 
                     </div>
-                    <div>
-                        <p><span><h5>Age:</h5></span> 24 Years</p>
-                        <p><span><h5>Email:</h5></span> alexander@gmail.com</p>
+                    <div class="my-bio">
+                        <p><span><strong>Age:</strong></span> 24 Years</p>
+                        <p><span><strong>Email:</strong></span> alexander@gmail.com</p>
                     </div>
                 </div>
                 <div class="download-socials">
-                    <button class="download">Download Cv</button>
+                    
+                    <button class="download animate__animated animate__bounce animate__slow">Download Cv</button>
                     <div class="social">
+                        <hr>
+
                         <ul>
-                            <li>Twiter</li>
-                            <li>Instagram</li>
-                            <li>Facebook</li>
-                            <li>LinkedIn</li>
+                            <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                            <li><a href=""><i class="bi bi-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- <section class="experience">
+        <div class="experience-section">
+            <div class="experience-title">
+                <h5>My Journey</h5>
+                <h6>Qualification</h6>
+            </div>
+            <div class="experience-area">
+                <div class="ea-section">
+                    <div class="first same">
+                        <h4>Education</h4>
+                        <div>
+                            <hr>
+                        </div>
+                        <div>
+                            <h6>CoderHouse Courses</h6>
+                            <div class="ea-sup">
+                                <p><Strong>Backend Programming</Strong></p>
+                                <p>2014-2016</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat qui maxime minima earum mollitia delectus ab reiciendis accusantium enim nihil omnis exercitationem, labore impedit repellendus veritatis quia laudantium libero quod est doloremque vitae. Quibusdam provident, distinctio id amet consectetur quidem dolorem laboriosam, temporibus impedit aperiam suscipit, laborum deserunt culpa asperiores.</p>
+                        </div>
+                    </div>
+                    <div class="first same">
+                        <div class="line-plus">
+                            <i class="bi bi-plus"></i>
+                        </div>
+                        <div class="plus">
+                            <h6>CoderHouse Courses</h6>
+                            <div class="ea-sup">
+                                <p><Strong>Backend Programming</Strong></p>
+                                <p>2014-2016</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat qui maxime minima earum mollitia delectus ab reiciendis accusantium enim nihil omnis exercitationem, labore impedit repellendus veritatis quia laudantium libero quod est doloremque vitae. Quibusdam provident, distinctio id amet consectetur quidem dolorem laboriosam, temporibus impedit aperiam suscipit, laborum deserunt culpa asperiores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ea-section">
+                    <div class="second same">
+
+                        <h4>Education</h4>
+                        <div>
+                            <hr>
+                        </div>
+                        <div>
+                            <h6>CoderHouse Courses</h6>
+                            <div class="ea-sup">
+                                <p><Strong>Backend Programming</Strong></p>
+                                <p>2014-2016</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat qui maxime minima earum mollitia delectus ab reiciendis accusantium enim nihil omnis exercitationem, labore impedit repellendus veritatis quia laudantium libero quod est doloremque vitae. Quibusdam provident, distinctio id amet consectetur quidem dolorem laboriosam, temporibus impedit aperiam suscipit, laborum deserunt culpa asperiores.</p>
+                        </div>
+                    </div>
+                    <div class="second same">
+                        <div class="plus1">
+                            <h6>CoderHouse Courses</h6>
+                            <div class="ea-sup">
+                                <p><Strong>Backend Programming</Strong></p>
+                                <p>2014-2016</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat qui maxime minima earum mollitia delectus ab reiciendis accusantium enim nihil omnis exercitationem, labore impedit repellendus veritatis quia laudantium libero quod est doloremque vitae. Quibusdam provident, distinctio id amet consectetur quidem dolorem laboriosam, temporibus impedit aperiam suscipit, laborum deserunt culpa asperiores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section> -->
+    <section class="services">
+        <div class="services-title">
+            <h6>Services</h6>
+            <h2>What i do for you</h2>
+        </div>
+        <div class="service-section">
+            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+                <div class="label">
+                    <span><i class="bi bi-journal-code"></i></span>
+                    <span>01</span>
+                </div>
+                <h5>UI/UX</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+            </div>
+            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+                <div class="label">
+                    <span><i class="bi bi-code-slash"></i></span>
+                    <span>02</span>
+                </div>
+                <h5>Web Development</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+            </div>
+            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+                <div class="label">
+                    <span><i class="bi bi-graph-up"></i></span>
+                    <span>03</span>
+                </div>
+                <h5>Research & Analysis</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+            </div>
+            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+                <div class="label">
+                    <span><i class="bi bi-journal-code"></i></span>
+                    <span>04</span>
+                </div>
+                <h5>UI/UX Design</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+            </div>
+            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+                <div class="label">
+                    <span><i class="bi bi-code-slash"></i></span>
+                    <span>05</span>
+                </div>
+                <h5>Web Development</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+            </div>
+            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+                <div class="label">
+                    <span><i class="bi bi-graph-up"></i></span>
+                    <span>06</span>
+                </div>
+                <h5>Research & Analysis</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="professional-skills">
+        <div class="ps-title">
+            <h6>MY TALENT</h6>
+            <h2>Professional Skills</h2>
+        </div>
+        <div class="skill-section">
+            <div class="ps-section animate__animated animate__FadeInLeft animate__delay-1s animate__slow">
+                <div class="ps-label">
+                    <span>PHP</span>
+                    <span>85%</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="ps-section animate__animated animate__FadeInLeft animate__delay-2s animate__slow">
+                <div class="ps-label">
+                    <span>Python</span>
+                    <span>75%</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="ps-section animate__animated animate__FadeInLeft animate__delay-3s animate__slow">
+                <div class="ps-label">
+                    <span>Javascript</span>
+                    <span>75%</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="ps-section animate__animated animate__FadeInLeft animate__delay-2s animate__slow">
+                <div class="ps-label">
+                    <span>WordPress></span>
+                    <span>75%</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="ps-section animate__animated animate__FadeInLeft animate__delay-2s animate__slow">
+                <div class="ps-label">
+                    <span>React</span>
+                    <span>70%</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="ps-section animate__animated animate__FadeInLeft animate__delay-2s animate__slow">
+                <div class="ps-label">
+                    <span>Adobe XD</span>
+                    <span>80%</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-works">
+        <div class="rw-title">
+            <h6>MY PORTFOLIO</h6>
+            <h2>Recent Works</h2>
+        </div>
+        <div class="works-section">
+            <div class="rw-section animate__animated animate__fadeIn animate__delay-1s animate__slow">
+                <div class="current">
+                    <div class="overlay">lorem</div>
+                </div>
+                <div class="rw-label">
+                    <a href="#"><img src="./asset/images/project-img-1.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="rw-section animate__animated animate__fadeIn animate__delay-2s animate__slow">
+                <div class="current">
+                    <div class="overlay">lorem</div>
+                </div>
+                <div class="rw-label">
+                    <a href="">
+                        <img src="./asset/images/project-img-2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rw-section animate__animated animate__fadeIn animate__delay-3s animate__slow">
+                <div class="current">
+                    <div class="overlay">lorem</div>
+                </div>
+                <div class="rw-label">
+                    <a href="">
+                        <img src="./asset/images/project-img-3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rw-section animate__animated animate__fadeIn animate__delay-2s animate__slow">
+                <div class="current">
+                    <div class="overlay">lorem</div>
+                </div>
+                <div class="rw-label">
+                    <a href="">
+                        <img src="./asset/images/project-img-4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rw-section animate__animated animate__fadeIn animate__delay-2s animate__slow">
+                <div class="current">
+                    <div class="overlay">lorem</div>
+                </div>
+                <div class="rw-label">
+                    <a href="">
+                        <img src="./asset/images/project-img-5.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rw-section animate__animated animate__fadeIn animate__delay-2s animate__slow">
+                <div class="current">
+                    <div class="overlay">lorem</div>
+                </div>
+                <div class="rw-label">
+                    <a href="">
+                        <img src="./asset/images/project-img-6.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel">
+
+    </section>
+
+    <section class="contact">
+        <div class="contact-section">
+            <div class="contact-title">
+                <h6>GET IN TOUCH</h6>
+                <h2>Contact Me</h2>
+            </div>
+            <div class="cm-section">
+                <div class="contact-left">
+                    <div class="cl-left">
+                        <div class="contact-info">
+                            <i class="bi bi-phone icon"></i>
+                            <span class="">Call Us </span>
+                        </div>
+                        <p class="cl">+123456789</p>
+                    </div>
+                    <div class="cl-left">
+                        <div class="contact-info">
+                            <i class="bi bi-envelope icon"></i>
+                            <span class="">Email Us</span>
+                        </div>
+                        <p class="cl">example@gmail.com</p>
+                    </div>
+                    <div class="cl-left">
+                        <div class="contact-info">
+                            <i class="bi bi-house icon"></i>
+                            <span class="">Address </span>
+                        </div>
+                        <p class="cl">Address Here</p>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <div>
+                            <input type="text" name="" id="" placeholder="Name">
+                            <input type="email" name="" id="" placeholder="Email">
+                        </div>
+                        <div>
+                            <input type="text" name="" id="" placeholder="Subject">
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+       <div class="footer">
+         <div class="foot-left foot">
+           &copy; 2024 Alexander. All Right Reserved
+        </div>
+        <div class="foot-right foot">
+            <ul>
+                <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+        </div>
+       </div>
+    </footer>
+
+    <script src="./asset/js/bootstrap.min.js"></script>
+
+    <!-- <script>
+        const hamburger = document.getElementById('hamburger');
+        hamburger.addEventListener('click', function(){
+            hamburger.classList.toggle('active')
+        })
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            function isElementInViewport(elem) {
+                var rect = elem.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            function handleScroll() {
+                $('.animate__animated').each(function() {
+                    if (isElementInViewport(this) && !$(this).hasClass('animated')) {
+                        $(this).addClass('animated animate__fadeInLeft'); 
+                        $(this).addClass('animated'); 
+                    } else if (!isElementInViewport(this)) {
+                        $(this).removeClass('animated');
+                    }
+                });
+            }
+
+            $(window).on('scroll', handleScroll);
+
+            handleScroll();
+        });
+        $(document).ready(function() {
+            $('#hamburger').on('click', function() {
+                $(this).toggleClass('active');
+            });
+        });
+
+    </script>
+    
 </body>
 </html>

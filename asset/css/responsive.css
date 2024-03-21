@@ -1,0 +1,171 @@
+@media screen and (max-width:1024px) {
+    .about-section,
+    .service-section,
+    .skill-section,
+    .works-section,
+    .contact-section,
+    .more-about-section,
+    .footer{
+        width: 1000px !important;
+    }
+
+}
+@media screen and (max-width:1280px) {
+    .about-section,
+    .service-section,
+    .skill-section,
+    .works-section,
+    .contact-section,
+    .more-about-section,
+    .footer{
+        width: 1000px !important;
+    }
+
+}
+@media screen and (max-width:1536px) {
+    
+}
+
+@media screen and (max-width:992px) {
+    .about-section,
+    .service-section,
+    .skill-section,
+    .works-section,
+    .contact-section,
+    .more-about-section,
+    .footer{
+        width: 900px !important;
+        justify-content: space-evenly;
+        
+    }
+    .about-section{
+        flex-direction: column-reverse;
+    }
+    .about-left,
+    .about-right{
+        width: 100% !important;
+    }
+    .about-right-img{
+        width: 100% !important;
+    }
+    .about-left,
+    .more-about-sub2{
+        padding: 20px 30px ;
+    }
+    .more-about-section,
+    .cm-section{
+        flex-direction: column;
+    }
+    .more-about-sub1,
+    .more-about-sub2,
+    .contact-left,
+    .contact-right{
+        width: 100% !important;
+    }
+
+    .ss-section,
+    .ps-section,
+    .rw-section{
+        width: 45% !important;
+    }
+    .contact-left{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cl-left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cl{
+        margin: 0  !important;
+    }
+
+
+}
+
+@media screen and (max-width:915px) {
+    .about-section,
+    .service-section,
+    .skill-section,
+    .works-section,
+    .contact-section,
+    .more-about-section,
+    .footer{
+        width: 700px !important;
+        justify-content: space-evenly;
+        
+    }
+}
+@media screen and (max-width:767px) {
+    .about-section,
+    .service-section,
+    .skill-section,
+    .works-section,
+    .contact-section,
+    .more-about-section,
+    .footer{
+        width: 90% !important;
+        justify-content: space-evenly;
+        
+    }
+    .ss-section,
+    .ps-section,
+    .rw-section{
+        width: 100% !important;
+    }
+    .mobile-nav{
+        display: block !important;
+    }
+    .nav__link{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:581px) {
+    .footer{
+        flex-direction: column;
+    }
+    .foot{
+        width: 100% !important;
+    }
+    .foot-right{
+        justify-content: center !important;
+    }
+    .foot-left{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .some-detail{
+        flex-direction: column;
+        gap: 0 !important;
+    }
+    .my-bio{
+        width: 100% !important;
+    }
+    .download-socials{
+        flex-direction: column-reverse;
+        align-items: flex-start !important;
+        gap: 20px !important;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cl-left:last-child{
+        flex-grow: 1;
+    }
+    .cl-left{
+       width: 100% !important;
+    }
+}
+@media screen and (max-width:390px) {
+    .about-left,
+    .more-about-sub2{
+        padding: 20px 10px ;
+    }
+}
