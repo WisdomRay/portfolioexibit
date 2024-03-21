@@ -122,8 +122,12 @@
     .nav__link{
         display: none !important;
     }
+  
     .nav-b{
         justify-content: flex-end !important;
+    }
+    .nav-bar{
+        justify-content: space-between !important;
     }
 }
 

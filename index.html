@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./asset/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./asset/css/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="./asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./asset/css/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <header>
+    <header class="main-nav">
         <div class="nav-bar">
             <div class="nav-a">
                 <a href="" class="logo">Alexandera</a>
@@ -25,25 +25,47 @@
 
             <div class="nav-b">
                 <ul class="nav__link">
-                    <li class="nav-link">
+                    <li class="nav--link">
                         <a href="#home" class="link active">Home</a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav--link">
                         <a href="#about" class="link">About</a>
                     </li>
-                    <!-- <li class="nav-link">
+                    <!-- <li class="nav--link">
                         <a href="#experience" class="link">Experience</a>
                     </li> -->
-                    <li class="nav-link">
+                    <li class="nav--link">
                         <a href="#services" class="link">Services</a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav--link">
                         <a href="#portfolio" class="link">Portfolio</a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav--link">
                         <a href="#contact" class="link">Contact</a>
                     </li>
                 </ul>
+                <div class="mobile-nav-link">
+                    <ul class="nav__link1">
+                        <li class="nav--link">
+                            <a href="#home" class="link active">Home</a>
+                        </li>
+                        <li class="nav--link">
+                            <a href="#about" class="link">About</a>
+                        </li>
+                        <!-- <li class="nav--link">
+                            <a href="#experience" class="link">Experience</a>
+                        </li> -->
+                        <li class="nav--link">
+                            <a href="#services" class="link">Services</a>
+                        </li>
+                        <li class="nav--link">
+                            <a href="#portfolio" class="link">Portfolio</a>
+                        </li>
+                        <li class="nav--link">
+                            <a href="#contact" class="link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="mobile-nav">
                     <button id="hamburger" class="nav-btn-toogle">
                         <span></span>
@@ -67,7 +89,7 @@
                 </div>
             </div>
             <div class="about-right">
-                <div class="about-right-img animate__animated animate__fadeInRight  animate__slow">
+                <div class="about-right-img animate__animated  animate__slow">
                     <img src="./asset/images/profile.png" alt="">
                 </div>
             </div>
@@ -541,7 +563,7 @@
         $(document).ready(function() {
             $('#hamburger').on('click', function() {
                 $(this).toggleClass('active');
-                $('.nav__link').toogleClass('toogle')
+                $('.mobile-nav-link').toggleClass('toogle')
             });
         });
         $('.owl-carousel').owlCarousel({

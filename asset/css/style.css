@@ -9,7 +9,7 @@
 .progress-bar{
     background: #b24bf3 !important;
 }
-header{
+.main-nav{
     position: fixed;
     top: 0;
     left: 0;
@@ -25,16 +25,16 @@ header{
 }
 .nav-bar{
     max-width: 1200px;
-    margin-inline: auto;
+    margin: auto;
     height: 70px;
     padding: 1rem;
     display: flex;
     align-items: center !important;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: relative;
 }
 .nav-a,
 .nav-b{
-    width: 45%;
     display: flex;
     justify-content: flex-start;
     align-items: center !important;
@@ -47,12 +47,35 @@ header{
     list-style: none;
     justify-content: space-between;
     margin: 0;
+    column-gap: 40px;
 }
-
-.nav__link a{
+.mobile-nav-link{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: #000;
+    display: none;
+    padding-top: 30px;
+    transition: height 300ms ease;
+}
+.nav__link1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+.mobile-nav-link.toogle{
+    display: block;
+    transition: height 300ms ease;
+}
+.nav__link a,
+.nav__link1 a{
     color: #fff0f5;
 }
-.active,
+.link.active,
 .link:hover{
     color:  #b24bf3 !important;
     transition: all 0.5s ease-in-out;
@@ -61,7 +84,7 @@ header{
     display: none;
 }
 .nav-btn-toogle{
-    width: 50px;
+    width: 40px;
     height: 30px;
     background: none;
     display: flex;
@@ -236,8 +259,8 @@ header{
     align-items: center;
 }
 .social hr{
-    margin-right: 10%;
-    width: 9%;
+    margin-right: 10% !important;
+    width: 9% !important;
 }
 .social a, .foot-right a{
     color: #fff0f5;
