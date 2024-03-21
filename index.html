@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./asset/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,38 +19,42 @@
 <body>
     <header>
         <div class="nav-bar">
-            <a href="" class="logo">Alexandera</a>
+            <div class="nav-a">
+                <a href="" class="logo">Alexandera</a>
+            </div>
 
-            <ul class="nav__link">
-                <li class="nav-link">
-                    <a href="#home" class="link active">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#about" class="link">About</a>
-                </li>
-                <!-- <li class="nav-link">
-                    <a href="#experience" class="link">Experience</a>
-                </li> -->
-                <li class="nav-link">
-                    <a href="#services" class="link">Services</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#portfolio" class="link">Portfolio</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#contact" class="link">Contact</a>
-                </li>
-            </ul>
-            <div class="mobile-nav">
-                <button id="hamburger" class="nav-toogle">
-                    <span></span>
-                    <span></span>
-                </button>
+            <div class="nav-b">
+                <ul class="nav__link">
+                    <li class="nav-link">
+                        <a href="#home" class="link active">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about" class="link">About</a>
+                    </li>
+                    <!-- <li class="nav-link">
+                        <a href="#experience" class="link">Experience</a>
+                    </li> -->
+                    <li class="nav-link">
+                        <a href="#services" class="link">Services</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#portfolio" class="link">Portfolio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact" class="link">Contact</a>
+                    </li>
+                </ul>
+                <div class="mobile-nav">
+                    <button id="hamburger" class="nav-btn-toogle">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-section">
             <div class="about-left">
                 <p class="hello">Hello</p>
@@ -175,13 +181,13 @@
                 
         </div>
     </section> -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="services-title">
             <h6>Services</h6>
             <h2>What i do for you</h2>
         </div>
         <div class="service-section">
-            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+            <div class="ss-section animate__animated animate__slow">
                 <div class="label">
                     <span><i class="bi bi-journal-code"></i></span>
                     <span>01</span>
@@ -189,7 +195,7 @@
                 <h5>UI/UX</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
             </div>
-            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+            <div class="ss-section animate__animated animate__slow">
                 <div class="label">
                     <span><i class="bi bi-code-slash"></i></span>
                     <span>02</span>
@@ -197,7 +203,7 @@
                 <h5>Web Development</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
             </div>
-            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+            <div class="ss-section animate__animated animate__slow">
                 <div class="label">
                     <span><i class="bi bi-graph-up"></i></span>
                     <span>03</span>
@@ -205,7 +211,7 @@
                 <h5>Research & Analysis</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
             </div>
-            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+            <div class="ss-section animate__animated animate__slow">
                 <div class="label">
                     <span><i class="bi bi-journal-code"></i></span>
                     <span>04</span>
@@ -213,7 +219,7 @@
                 <h5>UI/UX Design</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
             </div>
-            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+            <div class="ss-section animate__animated animate__slow">
                 <div class="label">
                     <span><i class="bi bi-code-slash"></i></span>
                     <span>05</span>
@@ -221,7 +227,7 @@
                 <h5>Web Development</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima itaque culpa ipsum possimus esse consequatur!</p>
             </div>
-            <div class="ss-section animate__animated animate__fadeIn  animate__slow">
+            <div class="ss-section animate__animated animate__slow">
                 <div class="label">
                     <span><i class="bi bi-graph-up"></i></span>
                     <span>06</span>
@@ -232,13 +238,13 @@
         </div>
     </section>
 
-    <section class="professional-skills">
+    <section class="professional-skills" id="">
         <div class="ps-title">
             <h6>MY TALENT</h6>
             <h2>Professional Skills</h2>
         </div>
         <div class="skill-section">
-            <div class="ps-section animate__animated animate__FadeInLeft  animate__slow">
+            <div class="ps-section animate__animated animate__slow">
                 <div class="ps-label">
                     <span>PHP</span>
                     <span>85%</span>
@@ -248,7 +254,7 @@
                     <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="ps-section animate__animated animate__FadeInLeft  animate__slow">
+            <div class="ps-section animate__animated animate__slow">
                 <div class="ps-label">
                     <span>Python</span>
                     <span>75%</span>
@@ -258,7 +264,7 @@
                     <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="ps-section animate__animated animate__FadeInLeft  animate__slow">
+            <div class="ps-section animate__animated animate__slow">
                 <div class="ps-label">
                     <span>Javascript</span>
                     <span>75%</span>
@@ -268,7 +274,7 @@
                     <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="ps-section animate__animated animate__FadeInLeft  animate__slow">
+            <div class="ps-section animate__animated animate__slow">
                 <div class="ps-label">
                     <span>WordPress></span>
                     <span>75%</span>
@@ -278,7 +284,7 @@
                     <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="ps-section animate__animated animate__FadeInLeft  animate__slow">
+            <div class="ps-section animate__animated  animate__slow">
                 <div class="ps-label">
                     <span>React</span>
                     <span>70%</span>
@@ -288,7 +294,7 @@
                     <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="ps-section animate__animated animate__FadeInLeft  animate__slow">
+            <div class="ps-section animate__animated  animate__slow">
                 <div class="ps-label">
                     <span>Adobe XD</span>
                     <span>80%</span>
@@ -301,13 +307,13 @@
         </div>
     </section>
 
-    <section class="recent-works">
+    <section class="recent-works" id="portfolio">
         <div class="rw-title">
             <h6>MY PORTFOLIO</h6>
             <h2>Recent Works</h2>
         </div>
         <div class="works-section">
-            <div class="rw-section animate__animated animate__fadeIn  animate__slow">
+            <div class="rw-section animate__animated  animate__slow">
                 <div class="current">
                     <div class="overlay">lorem</div>
                 </div>
@@ -315,7 +321,7 @@
                     <a href="#"><img src="./asset/images/project-img-1.jpg" alt=""></a>
                 </div>
             </div>
-            <div class="rw-section animate__animated animate__fadeIn  animate__slow">
+            <div class="rw-section animate__animated  animate__slow">
                 <div class="current">
                     <div class="overlay">lorem</div>
                 </div>
@@ -325,7 +331,7 @@
                     </a>
                 </div>
             </div>
-            <div class="rw-section animate__animated animate__fadeIn  animate__slow">
+            <div class="rw-section animate__animated  animate__slow">
                 <div class="current">
                     <div class="overlay">lorem</div>
                 </div>
@@ -335,7 +341,7 @@
                     </a>
                 </div>
             </div>
-            <div class="rw-section animate__animated animate__fadeIn  animate__slow">
+            <div class="rw-section animate__animated   animate__slow">
                 <div class="current">
                     <div class="overlay">lorem</div>
                 </div>
@@ -345,7 +351,7 @@
                     </a>
                 </div>
             </div>
-            <div class="rw-section animate__animated animate__fadeIn animate__delay-1s animate__slow">
+            <div class="rw-section animate__animated  animate__slow">
                 <div class="current">
                     <div class="overlay">lorem</div>
                 </div>
@@ -355,7 +361,7 @@
                     </a>
                 </div>
             </div>
-            <div class="rw-section animate__animated animate__fadeIn  animate__slow">
+            <div class="rw-section animate__animated  animate__slow">
                 <div class="current">
                     <div class="overlay">lorem</div>
                 </div>
@@ -368,11 +374,61 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <!-- <section class="carousel">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni cumque eligendi odio fuga vero rerum, iste blanditiis provident ab distinctio dolorem eveniet soluta illum! Minima, quibusdam voluptas dignissimos quasi ratione alias eos? Autem ad perspiciatis facere id veritatis, sint nulla architecto a nam, explicabo magni rem ratione. Possimus fugit totam architecto sit recusandae hic veniam, odit eaque. Repellendus, nesciunt. Cumque.</p>
+                <div class="testimonial-pic">
+                    <div class="testimonial-img">
+                        <img src="./asset/images/testimonial-1.jpg" alt="">
+                    </div>
+                    <div class="img-txt">
+                        <p><strong>John wilson</strong></p>
+                        <p>Setile, Washinton</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur a porro consequuntur voluptatem repellendus. Eaque fugiat cumque molestiae vel! Nemo perspiciatis doloribus quis quo corrupti! Laudantium quaerat veniam atque ipsum? Incidunt assumenda odit veritatis voluptate sunt inventore placeat minima, laboriosam harum accusamus quae omnis alias magni ex, maxime, sequi deserunt necessitatibus praesentium voluptas voluptatum blanditiis eius. Quasi ipsa quam nulla.</p>
+                <div class="testimonial-pic">
+                    <div class="testimonial-img">
+                        <img src="./asset/images/testimonial-2.jpg" alt="">
+                    </div>
+                    <div class="img-txt">
+                        <p><strong>Wilson John</strong></p>
+                        <p>Setile, Washinton</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni cumque eligendi odio fuga vero rerum, iste blanditiis provident ab distinctio dolorem eveniet soluta illum! Minima, quibusdam voluptas dignissimos quasi ratione alias eos? Autem ad perspiciatis facere id veritatis, sint nulla architecto a nam, explicabo magni rem ratione. Possimus fugit totam architecto sit recusandae hic veniam, odit eaque. Repellendus, nesciunt. Cumque.</p>
+                <div class="testimonial-pic">
+                    <div class="testimonial-img">
+                        <img src="./asset/images/testimonial-1.jpg" alt="">
+                    </div>
+                    <div class="img-txt">
+                        <p><strong>John wilson</strong></p>
+                        <p>Setile, Washinton</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur a porro consequuntur voluptatem repellendus. Eaque fugiat cumque molestiae vel! Nemo perspiciatis doloribus quis quo corrupti! Laudantium quaerat veniam atque ipsum? Incidunt assumenda odit veritatis voluptate sunt inventore placeat minima, laboriosam harum accusamus quae omnis alias magni ex, maxime, sequi deserunt necessitatibus praesentium voluptas voluptatum blanditiis eius. Quasi ipsa quam nulla.</p>
+                <div class="testimonial-pic">
+                    <div class="testimonial-img">
+                        <img src="./asset/images/testimonial-2.jpg" alt="">
+                    </div>
+                    <div class="img-txt">
+                        <p><strong>Wilson John</strong></p>
+                        <p>Setile, Washinton</p>
+                    </div>
+                </div>
+            </div>
 
-    </section>
+        </div>
+    </section> -->
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-section">
             <div class="contact-title">
                 <h6>GET IN TOUCH</h6>
@@ -380,21 +436,21 @@
             </div>
             <div class="cm-section">
                 <div class="contact-left">
-                    <div class="cl-left">
+                    <div class="cl-left animate__animated ">
                         <div class="contact-info">
                             <i class="bi bi-phone icon"></i>
                             <span class="">Call Us </span>
                         </div>
                         <p class="cl">+123456789</p>
                     </div>
-                    <div class="cl-left">
+                    <div class="cl-left animate__animated ">
                         <div class="contact-info">
                             <i class="bi bi-envelope icon"></i>
                             <span class="">Email Us</span>
                         </div>
                         <p class="cl">example@gmail.com</p>
                     </div>
-                    <div class="cl-left">
+                    <div class="cl-left animate__animated ">
                         <div class="contact-info">
                             <i class="bi bi-house icon"></i>
                             <span class="">Address </span>
@@ -402,7 +458,7 @@
                         <p class="cl">Address Here</p>
                     </div>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right animate__animated animate__bounce">
                     <form action="">
                         <div>
                             <input type="text" name="" id="" placeholder="Name">
@@ -415,7 +471,7 @@
                             <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                         </div>
                         <div>
-                            <button class="btn">Send Message</button>
+                            <button class="btnn">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -439,7 +495,8 @@
        </div>
     </footer>
 
-    <script src="./asset/js/bootstrap.min.js"></script>
+        <script src="./asset/js/jquery-3.7.1.js"></script>
+        <script src="./asset/js/owl.carousel.min.js"></script>
 
     <!-- <script>
         const hamburger = document.getElementById('hamburger');
@@ -447,7 +504,7 @@
             hamburger.classList.toggle('active')
         })
     </script> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script>
         $(document).ready(function() {
             var isMobile = false;
@@ -484,9 +541,25 @@
         $(document).ready(function() {
             $('#hamburger').on('click', function() {
                 $(this).toggleClass('active');
+                $('.nav__link').toogleClass('toogle')
             });
         });
-
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:2
+                }
+            }
+        })
     </script>
     
 </body>

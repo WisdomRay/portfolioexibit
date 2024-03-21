@@ -110,7 +110,6 @@
     .footer{
         width: 90% !important;
         justify-content: space-evenly;
-        
     }
     .ss-section,
     .ps-section,
@@ -122,6 +121,9 @@
     }
     .nav__link{
         display: none !important;
+    }
+    .nav-b{
+        justify-content: flex-end !important;
     }
 }
 
